@@ -14,7 +14,7 @@ public class diamondScript : MonoBehaviour
     void Start()
     {
 
-        rend.color = newColor;
+        
         //other.localPosition = new Vector3(3, 8, other.position.z);
 
     }
@@ -33,6 +33,10 @@ public class diamondScript : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(0.2f, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(-0.2f, 0, 0);
         }
     }
 }
